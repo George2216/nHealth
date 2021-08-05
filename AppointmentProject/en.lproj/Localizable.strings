@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  AppointmentProject
+
+  Created by George on 31.07.2021.
+  
+*/
+
+"doctorName" = "Doctor name";
+"filters" = "Filters";
+"clear" = "Clear";
+"language" = "Language";
+"appointments" = "Appointments";
+"doctors" = "Doctors";
+"doctor" = "Doctor";
+
+"close" = "Close";
+"subdivision" = "Subdivision";
+"professions" = "Professions";
+"signUp" = "Sign up";
+"fullName" = "Full name";
+"save" = "Save";
+"invalidNamePhone" = "Invalid full name / phone number";
+"map" = "Map";
+"history" = "History";
+"delete" = "Delete";
+"goToDoctor" = "Go to doctor";

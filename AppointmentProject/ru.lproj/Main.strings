@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3sq-6O-zIk"; */
+"3sq-6O-zIk.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "8dn-CQ-AQK"; */
+"8dn-CQ-AQK.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "BnB-8l-CBP"; */
+"BnB-8l-CBP.text" = "Label";
+
+/* Class = "UISegmentedControl"; CAL-HK-XNZ.segmentTitles[0] = "First"; ObjectID = "CAL-HK-XNZ"; */
+"CAL-HK-XNZ.segmentTitles[0]" = "First";
+
+/* Class = "UISegmentedControl"; CAL-HK-XNZ.segmentTitles[1] = "Second"; ObjectID = "CAL-HK-XNZ"; */
+"CAL-HK-XNZ.segmentTitles[1]" = "Second";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "FgO-nI-esI"; */
+"FgO-nI-esI.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ldv-Wl-j6u"; */
+"Ldv-Wl-j6u.text" = "Label";
+
+/* Class = "UILabel"; text = "Finish"; ObjectID = "M0W-Fp-eCD"; */
+"M0W-Fp-eCD.text" = "Finish";
+
+/* Class = "UIButton"; normalTitle = "Киев , Половка 5"; ObjectID = "Q79-uE-rDX"; */
+"Q79-uE-rDX.normalTitle" = "Киев , Половка 5";
+
+/* Class = "UITextField"; placeholder = "+38"; ObjectID = "S6e-DA-axe"; */
+"S6e-DA-axe.placeholder" = "+38";
+
+/* Class = "UILabel"; text = "Стоматология №2"; ObjectID = "SH3-Dg-v6k"; */
+"SH3-Dg-v6k.text" = "Стоматология №2";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Tva-5V-DeS"; */
+"Tva-5V-DeS.text" = "Label";
+
+/* Class = "UILabel"; text = "Doctor"; ObjectID = "bTn-z6-nS2"; */
+"bTn-z6-nS2.text" = "Doctor";
+
+/* Class = "UILabel"; text = "Автомонов Тест Тестович"; ObjectID = "dN1-sz-tqh"; */
+"dN1-sz-tqh.text" = "Автомонов Тест Тестович";
+
+/* Class = "UILabel"; text = "Профили"; ObjectID = "fdh-Ic-iL1"; */
+"fdh-Ic-iL1.text" = "Профили";
+
+/* Class = "UITextField"; placeholder = "Full name"; ObjectID = "h9r-Nn-hC3"; */
+"h9r-Nn-hC3.placeholder" = "Full name";
+
+/* Class = "UILabel"; text = "Терапевт , дентист , лор"; ObjectID = "kip-Qw-QYr"; */
+"kip-Qw-QYr.text" = "Терапевт , дентист , лор";
+
+/* Class = "UILabel"; text = "Клиника"; ObjectID = "lLN-Dr-di8"; */
+"lLN-Dr-di8.text" = "Клиника";
+
+/* Class = "UILabel"; text = "Запись на прием:"; ObjectID = "m77-MV-hAa"; */
+"m77-MV-hAa.text" = "Запись на прием:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nVz-xf-bRl"; */
+"nVz-xf-bRl.text" = "Label";
+
+/* Class = "UISearchBar"; placeholder = "Doctor name"; ObjectID = "s9B-pw-egP"; */
+"s9B-pw-egP.placeholder" = "Doctor name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zWm-av-KNu"; */
+"zWm-av-KNu.text" = "Label";

@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  AppointmentProject
+
+  Created by George on 31.07.2021.
+  
+*/
+"doctorName" = "Ім'я лікаря";
+"filters" = "Фільтри";
+"clear" = "Очистити";
+"language" = "Мова";
+"appointments" = "Записи";
+"doctors" = "Лікарі";
+"doctor" = "Лікар";
+"close" = "Закрити";
+"subdivision" = "Підрозділи";
+"professions" = "Профілі";
+"signUp" = "Записатися";
+"fullName" = "ПІБ";
+"save" = "Зберегти";
+"invalidNamePhone" = "Некоректні ПІБ / номер телефона";
+"map" = "Мапа";
+"history" = "Історія";
+"delete" = "Видалити";
+"goToDoctor" = "Перейти до лікаря";

@@ -3,19 +3,74 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E712A5B26A2FF4500AEABFA /* ModelDoctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E712A5A26A2FF4500AEABFA /* ModelDoctors.swift */; };
+		5E712A5E26A3012400AEABFA /* XMLDataDoctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E712A5D26A3012400AEABFA /* XMLDataDoctors.swift */; };
+		5E712A6026A323BF00AEABFA /* CenterListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E712A5F26A323BF00AEABFA /* CenterListModel.swift */; };
+		5E712A6226A3395B00AEABFA /* CollectionViewFlowLayoutSots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E712A6126A3395B00AEABFA /* CollectionViewFlowLayoutSots.swift */; };
+		5E712A6426A33A0500AEABFA /* TimeSlotsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E712A6326A33A0500AEABFA /* TimeSlotsCollection.swift */; };
+		5E712A6626A33ADF00AEABFA /* DoctorTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E712A6526A33ADF00AEABFA /* DoctorTimeCell.swift */; };
+		5E712A6A26A4752B00AEABFA /* SlotsByDocDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E712A6926A4752B00AEABFA /* SlotsByDocDayModel.swift */; };
+		5E712A6C26A7648900AEABFA /* SpecialtyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E712A6B26A7648900AEABFA /* SpecialtyListModel.swift */; };
+		5E7C731D26B410FA006468C8 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C731C26B410FA006468C8 /* Appointment.swift */; };
+		5E84D46826B6D535009255CF /* DataSourseExtensionn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84D46726B6D535009255CF /* DataSourseExtensionn.swift */; };
+		5E84D46A26B6DCDE009255CF /* AppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84D46926B6DCDE009255CF /* AppointmentCell.swift */; };
+		5E8C3F4F26A89BBF00D9F22D /* TableViewSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C3F4E26A89BBF00D9F22D /* TableViewSearch.swift */; };
+		5E8E930D26A06BEF00B3AB86 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8E930C26A06BEF00B3AB86 /* MapViewController.swift */; };
+		5E8E931126A0700A00B3AB86 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8E931026A0700A00B3AB86 /* MapViewModel.swift */; };
+		5E8E931326A0D96200B3AB86 /* DoctorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8E931226A0D96200B3AB86 /* DoctorCell.swift */; };
+		5E8E931526A0D97A00B3AB86 /* DoctorModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8E931426A0D97A00B3AB86 /* DoctorModelCell.swift */; };
+		5E8E931726A0E57600B3AB86 /* ProfessionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8E931626A0E57600B3AB86 /* ProfessionTVC.swift */; };
+		5E8E931926A0E59E00B3AB86 /* ProfessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8E931826A0E59E00B3AB86 /* ProfessionViewModel.swift */; };
+		5E9801BA26B54893001FDCDE /* ActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9801B926B54893001FDCDE /* ActivityVC.swift */; };
+		5E9801BE26B56A33001FDCDE /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9801BD26B56A33001FDCDE /* Localizable.swift */; };
+		5E9801C026B56A79001FDCDE /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9801BF26B56A79001FDCDE /* SettingsTableVC.swift */; };
+		5E9801C226B56B99001FDCDE /* SettingsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9801C126B56B99001FDCDE /* SettingsTableViewModel.swift */; };
+		5E9801C726B575D9001FDCDE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E9801C926B575D9001FDCDE /* Localizable.strings */; };
+		5E9801CD26B5886F001FDCDE /* MyAppointmentsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9801CC26B5886F001FDCDE /* MyAppointmentsTVC.swift */; };
+		5E9801CF26B58896001FDCDE /* MyAppointmentsTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9801CE26B58896001FDCDE /* MyAppointmentsTViewModel.swift */; };
+		5E9A245F26B0611A00DAF7CD /* AdditionalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A245E26B0611A00DAF7CD /* AdditionalSettings.swift */; };
+		5E9A246126B074D700DAF7CD /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A246026B074D700DAF7CD /* UIExtension.swift */; };
+		5E9A246326B079AE00DAF7CD /* TableViewDoctorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A246226B079AE00DAF7CD /* TableViewDoctorViewModel.swift */; };
+		5E9A246526B0810500DAF7CD /* DetailDoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A246426B0810500DAF7CD /* DetailDoctorModel.swift */; };
+		5E9A246726B086BA00DAF7CD /* SingletonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A246626B086BA00DAF7CD /* SingletonData.swift */; };
+		5E9A952026A226E70032D3A6 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 5E9A951F26A226E70032D3A6 /* XMLCoder */; };
+		5E9A952226A2272B0032D3A6 /* ApiManagerCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9A952126A2272B0032D3A6 /* ApiManagerCoder.swift */; };
 		5E9ADBF226A030A30080D0B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADBF126A030A30080D0B8 /* AppDelegate.swift */; };
 		5E9ADBF426A030A30080D0B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADBF326A030A30080D0B8 /* SceneDelegate.swift */; };
-		5E9ADBF626A030A30080D0B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADBF526A030A30080D0B8 /* ViewController.swift */; };
 		5E9ADBF926A030A30080D0B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9ADBF726A030A30080D0B8 /* Main.storyboard */; };
 		5E9ADBFC26A030A30080D0B8 /* AppointmentProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADBFA26A030A30080D0B8 /* AppointmentProject.xcdatamodeld */; };
 		5E9ADBFE26A030A50080D0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9ADBFD26A030A50080D0B8 /* Assets.xcassets */; };
 		5E9ADC0126A030A50080D0B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E9ADBFF26A030A50080D0B8 /* LaunchScreen.storyboard */; };
 		5E9ADC0C26A030A50080D0B8 /* AppointmentProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC0B26A030A50080D0B8 /* AppointmentProjectTests.swift */; };
 		5E9ADC1726A030A50080D0B8 /* AppointmentProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC1626A030A50080D0B8 /* AppointmentProjectUITests.swift */; };
+		5E9ADC2926A031D20080D0B8 /* SlotsByDocDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC2826A031D20080D0B8 /* SlotsByDocDay.swift */; };
+		5E9ADC2E26A032B90080D0B8 /* InitialTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC2D26A032B90080D0B8 /* InitialTableVC.swift */; };
+		5E9ADC3226A035F40080D0B8 /* InitialTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC3126A035F40080D0B8 /* InitialTableViewModel.swift */; };
+		5E9ADC3426A036240080D0B8 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC3326A036240080D0B8 /* ViewModelProtocol.swift */; };
+		5E9ADC3826A036DD0080D0B8 /* ModelFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC3726A036DD0080D0B8 /* ModelFilterCell.swift */; };
+		5E9ADC3C26A038B10080D0B8 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC3B26A038B10080D0B8 /* FilterCell.swift */; };
+		5E9ADC3E26A0471C0080D0B8 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC3D26A0471C0080D0B8 /* CalendarController.swift */; };
+		5E9ADC4026A04D540080D0B8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC3F26A04D540080D0B8 /* Extensions.swift */; };
+		5E9ADC4226A05A4F0080D0B8 /* SubdivisionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC4126A05A4F0080D0B8 /* SubdivisionModel.swift */; };
+		5E9ADC4426A05DE70080D0B8 /* SubdivisionTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC4326A05DE70080D0B8 /* SubdivisionTableVC.swift */; };
+		5E9ADC4626A0600D0080D0B8 /* CalendarControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC4526A0600D0080D0B8 /* CalendarControllerViewModel.swift */; };
+		5E9ADC4826A0603F0080D0B8 /* SubdivisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC4726A0603F0080D0B8 /* SubdivisionViewModel.swift */; };
+		5E9ADC4A26A0620B0080D0B8 /* SubdivisionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9ADC4926A0620B0080D0B8 /* SubdivisionCell.swift */; };
+		5EA2165B26A973E300E8818A /* TableViewDoctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2165A26A973E300E8818A /* TableViewDoctor.swift */; };
+		5EB5AA0726B2BC2500F112AB /* AppointmentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5AA0626B2BC2500F112AB /* AppointmentTVC.swift */; };
+		5EB5AA0926B2BC6500F112AB /* AppointmentTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5AA0826B2BC6500F112AB /* AppointmentTViewModel.swift */; };
+		5EB5AA0B26B2D6C300F112AB /* AppointmentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5AA0A26B2D6C300F112AB /* AppointmentModels.swift */; };
+		5EDE147126B7CE97003D3028 /* MyAppointsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE147026B7CE97003D3028 /* MyAppointsModel.swift */; };
+		5EDE147326B7E345003D3028 /* MenuEventsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE147226B7E345003D3028 /* MenuEventsTableVC.swift */; };
+		5EDE147526B7E36D003D3028 /* MenuEventTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE147426B7E36D003D3028 /* MenuEventTableViewModel.swift */; };
+		5EDE147726B7E391003D3028 /* ModelMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE147626B7E391003D3028 /* ModelMenuCell.swift */; };
+		6727FCE5E85D7E7BF584D472 /* Pods_AppointmentProject_AppointmentProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575296C33769AC0A486127AC /* Pods_AppointmentProject_AppointmentProjectUITests.framework */; };
+		C078B9745D7ED7AFEDD94960 /* Pods_AppointmentProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5688C43213C95679C94046A4 /* Pods_AppointmentProject.framework */; };
+		E7EF99504BB94E5A9105C733 /* Pods_AppointmentProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D39DB0F6532A64F2C13FD98 /* Pods_AppointmentProjectTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +91,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		381D50C0DA8A090DC81DB640 /* Pods-AppointmentProject-AppointmentProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppointmentProject-AppointmentProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppointmentProject-AppointmentProjectUITests/Pods-AppointmentProject-AppointmentProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C9FFB25714CF70973DADFAB /* Pods-AppointmentProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppointmentProject.debug.xcconfig"; path = "Target Support Files/Pods-AppointmentProject/Pods-AppointmentProject.debug.xcconfig"; sourceTree = "<group>"; };
+		4D39DB0F6532A64F2C13FD98 /* Pods_AppointmentProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppointmentProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5688C43213C95679C94046A4 /* Pods_AppointmentProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppointmentProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		575296C33769AC0A486127AC /* Pods_AppointmentProject_AppointmentProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppointmentProject_AppointmentProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E712A5A26A2FF4500AEABFA /* ModelDoctors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDoctors.swift; sourceTree = "<group>"; };
+		5E712A5D26A3012400AEABFA /* XMLDataDoctors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLDataDoctors.swift; sourceTree = "<group>"; };
+		5E712A5F26A323BF00AEABFA /* CenterListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterListModel.swift; sourceTree = "<group>"; };
+		5E712A6126A3395B00AEABFA /* CollectionViewFlowLayoutSots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayoutSots.swift; sourceTree = "<group>"; };
+		5E712A6326A33A0500AEABFA /* TimeSlotsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotsCollection.swift; sourceTree = "<group>"; };
+		5E712A6526A33ADF00AEABFA /* DoctorTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTimeCell.swift; sourceTree = "<group>"; };
+		5E712A6926A4752B00AEABFA /* SlotsByDocDayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsByDocDayModel.swift; sourceTree = "<group>"; };
+		5E712A6B26A7648900AEABFA /* SpecialtyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialtyListModel.swift; sourceTree = "<group>"; };
+		5E7C731C26B410FA006468C8 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		5E84D46726B6D535009255CF /* DataSourseExtensionn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourseExtensionn.swift; sourceTree = "<group>"; };
+		5E84D46926B6DCDE009255CF /* AppointmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCell.swift; sourceTree = "<group>"; };
+		5E8C3F4E26A89BBF00D9F22D /* TableViewSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSearch.swift; sourceTree = "<group>"; };
+		5E8E930C26A06BEF00B3AB86 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5E8E931026A0700A00B3AB86 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		5E8E931226A0D96200B3AB86 /* DoctorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCell.swift; sourceTree = "<group>"; };
+		5E8E931426A0D97A00B3AB86 /* DoctorModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorModelCell.swift; sourceTree = "<group>"; };
+		5E8E931626A0E57600B3AB86 /* ProfessionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionTVC.swift; sourceTree = "<group>"; };
+		5E8E931826A0E59E00B3AB86 /* ProfessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionViewModel.swift; sourceTree = "<group>"; };
+		5E9801B926B54893001FDCDE /* ActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityVC.swift; sourceTree = "<group>"; };
+		5E9801BD26B56A33001FDCDE /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		5E9801BF26B56A79001FDCDE /* SettingsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
+		5E9801C126B56B99001FDCDE /* SettingsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewModel.swift; sourceTree = "<group>"; };
+		5E9801C326B57554001FDCDE /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
+		5E9801C426B57560001FDCDE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		5E9801C826B575D9001FDCDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5E9801CA26B575DF001FDCDE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5E9801CB26B575E0001FDCDE /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5E9801CC26B5886F001FDCDE /* MyAppointmentsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsTVC.swift; sourceTree = "<group>"; };
+		5E9801CE26B58896001FDCDE /* MyAppointmentsTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsTViewModel.swift; sourceTree = "<group>"; };
+		5E9A245E26B0611A00DAF7CD /* AdditionalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalSettings.swift; sourceTree = "<group>"; };
+		5E9A246026B074D700DAF7CD /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		5E9A246226B079AE00DAF7CD /* TableViewDoctorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDoctorViewModel.swift; sourceTree = "<group>"; };
+		5E9A246426B0810500DAF7CD /* DetailDoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDoctorModel.swift; sourceTree = "<group>"; };
+		5E9A246626B086BA00DAF7CD /* SingletonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonData.swift; sourceTree = "<group>"; };
+		5E9A952126A2272B0032D3A6 /* ApiManagerCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerCoder.swift; sourceTree = "<group>"; };
 		5E9ADBEE26A030A30080D0B8 /* AppointmentProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppointmentProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9ADBF126A030A30080D0B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E9ADBF326A030A30080D0B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E9ADBF526A030A30080D0B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E9ADBF826A030A30080D0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E9ADBFB26A030A30080D0B8 /* AppointmentProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppointmentProject.xcdatamodel; sourceTree = "<group>"; };
 		5E9ADBFD26A030A50080D0B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +145,31 @@
 		5E9ADC1226A030A50080D0B8 /* AppointmentProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppointmentProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9ADC1626A030A50080D0B8 /* AppointmentProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentProjectUITests.swift; sourceTree = "<group>"; };
 		5E9ADC1826A030A50080D0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E9ADC2826A031D20080D0B8 /* SlotsByDocDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsByDocDay.swift; sourceTree = "<group>"; };
+		5E9ADC2D26A032B90080D0B8 /* InitialTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialTableVC.swift; sourceTree = "<group>"; };
+		5E9ADC3126A035F40080D0B8 /* InitialTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialTableViewModel.swift; sourceTree = "<group>"; };
+		5E9ADC3326A036240080D0B8 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		5E9ADC3726A036DD0080D0B8 /* ModelFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFilterCell.swift; sourceTree = "<group>"; };
+		5E9ADC3B26A038B10080D0B8 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		5E9ADC3D26A0471C0080D0B8 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
+		5E9ADC3F26A04D540080D0B8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5E9ADC4126A05A4F0080D0B8 /* SubdivisionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubdivisionModel.swift; sourceTree = "<group>"; };
+		5E9ADC4326A05DE70080D0B8 /* SubdivisionTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubdivisionTableVC.swift; sourceTree = "<group>"; };
+		5E9ADC4526A0600D0080D0B8 /* CalendarControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarControllerViewModel.swift; sourceTree = "<group>"; };
+		5E9ADC4726A0603F0080D0B8 /* SubdivisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubdivisionViewModel.swift; sourceTree = "<group>"; };
+		5E9ADC4926A0620B0080D0B8 /* SubdivisionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubdivisionCell.swift; sourceTree = "<group>"; };
+		5EA2165A26A973E300E8818A /* TableViewDoctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDoctor.swift; sourceTree = "<group>"; };
+		5EB5AA0626B2BC2500F112AB /* AppointmentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTVC.swift; sourceTree = "<group>"; };
+		5EB5AA0826B2BC6500F112AB /* AppointmentTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTViewModel.swift; sourceTree = "<group>"; };
+		5EB5AA0A26B2D6C300F112AB /* AppointmentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentModels.swift; sourceTree = "<group>"; };
+		5EDE147026B7CE97003D3028 /* MyAppointsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointsModel.swift; sourceTree = "<group>"; };
+		5EDE147226B7E345003D3028 /* MenuEventsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEventsTableVC.swift; sourceTree = "<group>"; };
+		5EDE147426B7E36D003D3028 /* MenuEventTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEventTableViewModel.swift; sourceTree = "<group>"; };
+		5EDE147626B7E391003D3028 /* ModelMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMenuCell.swift; sourceTree = "<group>"; };
+		75424020936E5207D6BD4B1D /* Pods-AppointmentProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppointmentProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AppointmentProjectTests/Pods-AppointmentProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		7AA39A7F2082906CDD7EBC8C /* Pods-AppointmentProject-AppointmentProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppointmentProject-AppointmentProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-AppointmentProject-AppointmentProjectUITests/Pods-AppointmentProject-AppointmentProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CED1F83F2E4178A2453ECF9E /* Pods-AppointmentProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppointmentProject.release.xcconfig"; path = "Target Support Files/Pods-AppointmentProject/Pods-AppointmentProject.release.xcconfig"; sourceTree = "<group>"; };
+		D996BE56933AEAA787A03773 /* Pods-AppointmentProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppointmentProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AppointmentProjectTests/Pods-AppointmentProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +177,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E9A952026A226E70032D3A6 /* XMLCoder in Frameworks */,
+				C078B9745D7ED7AFEDD94960 /* Pods_AppointmentProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7EF99504BB94E5A9105C733 /* Pods_AppointmentProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +194,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6727FCE5E85D7E7BF584D472 /* Pods_AppointmentProject_AppointmentProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E712A5C26A300F900AEABFA /* InputXMLData */ = {
+			isa = PBXGroup;
+			children = (
+				5E712A5D26A3012400AEABFA /* XMLDataDoctors.swift */,
+			);
+			path = InputXMLData;
+			sourceTree = "<group>";
+		};
+		5E9801BB26B56933001FDCDE /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				5E9A952126A2272B0032D3A6 /* ApiManagerCoder.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		5E9801BC26B5694D001FDCDE /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				5E9ADC3F26A04D540080D0B8 /* Extensions.swift */,
+				5E9A246026B074D700DAF7CD /* UIExtension.swift */,
+				5E9A246626B086BA00DAF7CD /* SingletonData.swift */,
+				5E9ADC3326A036240080D0B8 /* ViewModelProtocol.swift */,
+				5E9A245E26B0611A00DAF7CD /* AdditionalSettings.swift */,
+				5E9801BD26B56A33001FDCDE /* Localizable.swift */,
+				5E84D46726B6D535009255CF /* DataSourseExtensionn.swift */,
+			);
+			path = Additional;
+			sourceTree = "<group>";
+		};
 		5E9ADBE526A030A30080D0B8 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +238,8 @@
 				5E9ADC0A26A030A50080D0B8 /* AppointmentProjectTests */,
 				5E9ADC1526A030A50080D0B8 /* AppointmentProjectUITests */,
 				5E9ADBEF26A030A30080D0B8 /* Products */,
+				913F0807C2DBCD5BF8CF14FB /* Pods */,
+				D47CC948B5FD6DAEE08CA84E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,7 +258,13 @@
 			children = (
 				5E9ADBF126A030A30080D0B8 /* AppDelegate.swift */,
 				5E9ADBF326A030A30080D0B8 /* SceneDelegate.swift */,
-				5E9ADBF526A030A30080D0B8 /* ViewController.swift */,
+				5E9801C926B575D9001FDCDE /* Localizable.strings */,
+				5E9801BC26B5694D001FDCDE /* Additional */,
+				5E9801BB26B56933001FDCDE /* ApiManager */,
+				5E9ADC3A26A038910080D0B8 /* Cells */,
+				5E9ADC2F26A032BC0080D0B8 /* View */,
+				5E9ADC2A26A0328A0080D0B8 /* Models */,
+				5E9ADC3026A035D80080D0B8 /* ViewModel */,
 				5E9ADBF726A030A30080D0B8 /* Main.storyboard */,
 				5E9ADBFD26A030A50080D0B8 /* Assets.xcassets */,
 				5E9ADBFF26A030A50080D0B8 /* LaunchScreen.storyboard */,
@@ -131,6 +292,116 @@
 			path = AppointmentProjectUITests;
 			sourceTree = "<group>";
 		};
+		5E9ADC2A26A0328A0080D0B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E9ADC2B26A032950080D0B8 /* ApiModels */,
+				5E9ADC3526A036790080D0B8 /* AllModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E9ADC2B26A032950080D0B8 /* ApiModels */ = {
+			isa = PBXGroup;
+			children = (
+				5E9ADC2826A031D20080D0B8 /* SlotsByDocDay.swift */,
+				5E712A5A26A2FF4500AEABFA /* ModelDoctors.swift */,
+				5E712A5F26A323BF00AEABFA /* CenterListModel.swift */,
+				5E712A6926A4752B00AEABFA /* SlotsByDocDayModel.swift */,
+				5E712A6B26A7648900AEABFA /* SpecialtyListModel.swift */,
+				5E7C731C26B410FA006468C8 /* Appointment.swift */,
+			);
+			path = ApiModels;
+			sourceTree = "<group>";
+		};
+		5E9ADC2F26A032BC0080D0B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E9ADC2D26A032B90080D0B8 /* InitialTableVC.swift */,
+				5E8C3F4E26A89BBF00D9F22D /* TableViewSearch.swift */,
+				5EA2165A26A973E300E8818A /* TableViewDoctor.swift */,
+				5E712A6126A3395B00AEABFA /* CollectionViewFlowLayoutSots.swift */,
+				5EB5AA0626B2BC2500F112AB /* AppointmentTVC.swift */,
+				5E9801B926B54893001FDCDE /* ActivityVC.swift */,
+				5E712A6326A33A0500AEABFA /* TimeSlotsCollection.swift */,
+				5E9ADC3D26A0471C0080D0B8 /* CalendarController.swift */,
+				5E9ADC4326A05DE70080D0B8 /* SubdivisionTableVC.swift */,
+				5E8E930C26A06BEF00B3AB86 /* MapViewController.swift */,
+				5E8E931626A0E57600B3AB86 /* ProfessionTVC.swift */,
+				5E9801BF26B56A79001FDCDE /* SettingsTableVC.swift */,
+				5E9801CC26B5886F001FDCDE /* MyAppointmentsTVC.swift */,
+				5EDE147226B7E345003D3028 /* MenuEventsTableVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E9ADC3026A035D80080D0B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E9ADC3126A035F40080D0B8 /* InitialTableViewModel.swift */,
+				5E9A246226B079AE00DAF7CD /* TableViewDoctorViewModel.swift */,
+				5E9ADC4526A0600D0080D0B8 /* CalendarControllerViewModel.swift */,
+				5E9ADC4726A0603F0080D0B8 /* SubdivisionViewModel.swift */,
+				5E8E931026A0700A00B3AB86 /* MapViewModel.swift */,
+				5E8E931826A0E59E00B3AB86 /* ProfessionViewModel.swift */,
+				5EB5AA0826B2BC6500F112AB /* AppointmentTViewModel.swift */,
+				5E9801C126B56B99001FDCDE /* SettingsTableViewModel.swift */,
+				5E9801CE26B58896001FDCDE /* MyAppointmentsTViewModel.swift */,
+				5EDE147426B7E36D003D3028 /* MenuEventTableViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5E9ADC3526A036790080D0B8 /* AllModels */ = {
+			isa = PBXGroup;
+			children = (
+				5E9ADC3726A036DD0080D0B8 /* ModelFilterCell.swift */,
+				5E9ADC4126A05A4F0080D0B8 /* SubdivisionModel.swift */,
+				5E8E931426A0D97A00B3AB86 /* DoctorModelCell.swift */,
+				5E9A246426B0810500DAF7CD /* DetailDoctorModel.swift */,
+				5EB5AA0A26B2D6C300F112AB /* AppointmentModels.swift */,
+				5EDE147026B7CE97003D3028 /* MyAppointsModel.swift */,
+				5EDE147626B7E391003D3028 /* ModelMenuCell.swift */,
+				5E712A5C26A300F900AEABFA /* InputXMLData */,
+			);
+			path = AllModels;
+			sourceTree = "<group>";
+		};
+		5E9ADC3A26A038910080D0B8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5E9ADC3B26A038B10080D0B8 /* FilterCell.swift */,
+				5E9ADC4926A0620B0080D0B8 /* SubdivisionCell.swift */,
+				5E8E931226A0D96200B3AB86 /* DoctorCell.swift */,
+				5E712A6526A33ADF00AEABFA /* DoctorTimeCell.swift */,
+				5E84D46926B6DCDE009255CF /* AppointmentCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		913F0807C2DBCD5BF8CF14FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C9FFB25714CF70973DADFAB /* Pods-AppointmentProject.debug.xcconfig */,
+				CED1F83F2E4178A2453ECF9E /* Pods-AppointmentProject.release.xcconfig */,
+				381D50C0DA8A090DC81DB640 /* Pods-AppointmentProject-AppointmentProjectUITests.debug.xcconfig */,
+				7AA39A7F2082906CDD7EBC8C /* Pods-AppointmentProject-AppointmentProjectUITests.release.xcconfig */,
+				D996BE56933AEAA787A03773 /* Pods-AppointmentProjectTests.debug.xcconfig */,
+				75424020936E5207D6BD4B1D /* Pods-AppointmentProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D47CC948B5FD6DAEE08CA84E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5688C43213C95679C94046A4 /* Pods_AppointmentProject.framework */,
+				575296C33769AC0A486127AC /* Pods_AppointmentProject_AppointmentProjectUITests.framework */,
+				4D39DB0F6532A64F2C13FD98 /* Pods_AppointmentProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,15 +409,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E9ADC1B26A030A50080D0B8 /* Build configuration list for PBXNativeTarget "AppointmentProject" */;
 			buildPhases = (
+				CB49063F4095FB540C18A1BF /* [CP] Check Pods Manifest.lock */,
 				5E9ADBEA26A030A30080D0B8 /* Sources */,
 				5E9ADBEB26A030A30080D0B8 /* Frameworks */,
 				5E9ADBEC26A030A30080D0B8 /* Resources */,
+				18F247A53EFE70EA63FA6D55 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AppointmentProject;
+			packageProductDependencies = (
+				5E9A951F26A226E70032D3A6 /* XMLCoder */,
+			);
 			productName = AppointmentProject;
 			productReference = 5E9ADBEE26A030A30080D0B8 /* AppointmentProject.app */;
 			productType = "com.apple.product-type.application";
@@ -155,6 +431,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E9ADC1E26A030A50080D0B8 /* Build configuration list for PBXNativeTarget "AppointmentProjectTests" */;
 			buildPhases = (
+				DCF35CEBA0C91363BF3CE88C /* [CP] Check Pods Manifest.lock */,
 				5E9ADC0326A030A50080D0B8 /* Sources */,
 				5E9ADC0426A030A50080D0B8 /* Frameworks */,
 				5E9ADC0526A030A50080D0B8 /* Resources */,
@@ -173,9 +450,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E9ADC2126A030A50080D0B8 /* Build configuration list for PBXNativeTarget "AppointmentProjectUITests" */;
 			buildPhases = (
+				8D41560BBC2649813777212E /* [CP] Check Pods Manifest.lock */,
 				5E9ADC0E26A030A50080D0B8 /* Sources */,
 				5E9ADC0F26A030A50080D0B8 /* Frameworks */,
 				5E9ADC1026A030A50080D0B8 /* Resources */,
+				10BA83641533827B89A5A9CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,8 +495,13 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
+				ru,
 			);
 			mainGroup = 5E9ADBE526A030A30080D0B8;
+			packageReferences = (
+				5E9A951E26A226E70032D3A6 /* XCRemoteSwiftPackageReference "XMLCoder" */,
+			);
 			productRefGroup = 5E9ADBEF26A030A30080D0B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E9ADC0126A030A50080D0B8 /* LaunchScreen.storyboard in Resources */,
+				5E9801C726B575D9001FDCDE /* Localizable.strings in Resources */,
 				5E9ADBFE26A030A50080D0B8 /* Assets.xcassets in Resources */,
 				5E9ADBF926A030A30080D0B8 /* Main.storyboard in Resources */,
 			);
@@ -256,15 +541,168 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10BA83641533827B89A5A9CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppointmentProject-AppointmentProjectUITests/Pods-AppointmentProject-AppointmentProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppointmentProject-AppointmentProjectUITests/Pods-AppointmentProject-AppointmentProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppointmentProject-AppointmentProjectUITests/Pods-AppointmentProject-AppointmentProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18F247A53EFE70EA63FA6D55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppointmentProject/Pods-AppointmentProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppointmentProject/Pods-AppointmentProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppointmentProject/Pods-AppointmentProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D41560BBC2649813777212E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppointmentProject-AppointmentProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB49063F4095FB540C18A1BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppointmentProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF35CEBA0C91363BF3CE88C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppointmentProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E9ADBEA26A030A30080D0B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E9ADBF626A030A30080D0B8 /* ViewController.swift in Sources */,
+				5E9ADC3E26A0471C0080D0B8 /* CalendarController.swift in Sources */,
+				5E84D46A26B6DCDE009255CF /* AppointmentCell.swift in Sources */,
+				5E8E931526A0D97A00B3AB86 /* DoctorModelCell.swift in Sources */,
+				5E9ADC4626A0600D0080D0B8 /* CalendarControllerViewModel.swift in Sources */,
+				5E712A6426A33A0500AEABFA /* TimeSlotsCollection.swift in Sources */,
+				5E712A6626A33ADF00AEABFA /* DoctorTimeCell.swift in Sources */,
+				5EA2165B26A973E300E8818A /* TableViewDoctor.swift in Sources */,
+				5E9A246126B074D700DAF7CD /* UIExtension.swift in Sources */,
+				5E712A5B26A2FF4500AEABFA /* ModelDoctors.swift in Sources */,
 				5E9ADBFC26A030A30080D0B8 /* AppointmentProject.xcdatamodeld in Sources */,
+				5E712A6C26A7648900AEABFA /* SpecialtyListModel.swift in Sources */,
+				5E9ADC3C26A038B10080D0B8 /* FilterCell.swift in Sources */,
+				5E9A245F26B0611A00DAF7CD /* AdditionalSettings.swift in Sources */,
+				5E8E931726A0E57600B3AB86 /* ProfessionTVC.swift in Sources */,
+				5E9ADC4226A05A4F0080D0B8 /* SubdivisionModel.swift in Sources */,
+				5E8E930D26A06BEF00B3AB86 /* MapViewController.swift in Sources */,
+				5E9801CD26B5886F001FDCDE /* MyAppointmentsTVC.swift in Sources */,
+				5EDE147326B7E345003D3028 /* MenuEventsTableVC.swift in Sources */,
+				5E84D46826B6D535009255CF /* DataSourseExtensionn.swift in Sources */,
+				5EB5AA0B26B2D6C300F112AB /* AppointmentModels.swift in Sources */,
 				5E9ADBF226A030A30080D0B8 /* AppDelegate.swift in Sources */,
+				5EDE147126B7CE97003D3028 /* MyAppointsModel.swift in Sources */,
+				5E9A246526B0810500DAF7CD /* DetailDoctorModel.swift in Sources */,
+				5EB5AA0726B2BC2500F112AB /* AppointmentTVC.swift in Sources */,
+				5E9ADC3226A035F40080D0B8 /* InitialTableViewModel.swift in Sources */,
 				5E9ADBF426A030A30080D0B8 /* SceneDelegate.swift in Sources */,
+				5E712A6226A3395B00AEABFA /* CollectionViewFlowLayoutSots.swift in Sources */,
+				5E9801BE26B56A33001FDCDE /* Localizable.swift in Sources */,
+				5E8E931126A0700A00B3AB86 /* MapViewModel.swift in Sources */,
+				5E9ADC4026A04D540080D0B8 /* Extensions.swift in Sources */,
+				5E9ADC4826A0603F0080D0B8 /* SubdivisionViewModel.swift in Sources */,
+				5E8E931926A0E59E00B3AB86 /* ProfessionViewModel.swift in Sources */,
+				5E712A6026A323BF00AEABFA /* CenterListModel.swift in Sources */,
+				5E9ADC2926A031D20080D0B8 /* SlotsByDocDay.swift in Sources */,
+				5E9A952226A2272B0032D3A6 /* ApiManagerCoder.swift in Sources */,
+				5E712A6A26A4752B00AEABFA /* SlotsByDocDayModel.swift in Sources */,
+				5E9801C026B56A79001FDCDE /* SettingsTableVC.swift in Sources */,
+				5E9801CF26B58896001FDCDE /* MyAppointmentsTViewModel.swift in Sources */,
+				5E9A246326B079AE00DAF7CD /* TableViewDoctorViewModel.swift in Sources */,
+				5E8E931326A0D96200B3AB86 /* DoctorCell.swift in Sources */,
+				5EDE147726B7E391003D3028 /* ModelMenuCell.swift in Sources */,
+				5E8C3F4F26A89BBF00D9F22D /* TableViewSearch.swift in Sources */,
+				5E7C731D26B410FA006468C8 /* Appointment.swift in Sources */,
+				5E9ADC4A26A0620B0080D0B8 /* SubdivisionCell.swift in Sources */,
+				5E9A246726B086BA00DAF7CD /* SingletonData.swift in Sources */,
+				5E9ADC4426A05DE70080D0B8 /* SubdivisionTableVC.swift in Sources */,
+				5E9ADC3826A036DD0080D0B8 /* ModelFilterCell.swift in Sources */,
+				5E9ADC2E26A032B90080D0B8 /* InitialTableVC.swift in Sources */,
+				5EB5AA0926B2BC6500F112AB /* AppointmentTViewModel.swift in Sources */,
+				5E9801C226B56B99001FDCDE /* SettingsTableViewModel.swift in Sources */,
+				5E9801BA26B54893001FDCDE /* ActivityVC.swift in Sources */,
+				5E712A5E26A3012400AEABFA /* XMLDataDoctors.swift in Sources */,
+				5E9ADC3426A036240080D0B8 /* ViewModelProtocol.swift in Sources */,
+				5EDE147526B7E36D003D3028 /* MenuEventTableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +738,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5E9801C926B575D9001FDCDE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E9801C826B575D9001FDCDE /* en */,
+				5E9801CA26B575DF001FDCDE /* ru */,
+				5E9801CB26B575E0001FDCDE /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		5E9ADBF726A030A30080D0B8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5E9ADBF826A030A30080D0B8 /* Base */,
+				5E9801C326B57554001FDCDE /* uk */,
+				5E9801C426B57560001FDCDE /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -323,6 +773,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -384,6 +835,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -437,6 +889,7 @@
 		};
 		5E9ADC1C26A030A50080D0B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9FFB25714CF70973DADFAB /* Pods-AppointmentProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +909,7 @@
 		};
 		5E9ADC1D26A030A50080D0B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED1F83F2E4178A2453ECF9E /* Pods-AppointmentProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +929,7 @@
 		};
 		5E9ADC1F26A030A50080D0B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D996BE56933AEAA787A03773 /* Pods-AppointmentProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +952,7 @@
 		};
 		5E9ADC2026A030A50080D0B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75424020936E5207D6BD4B1D /* Pods-AppointmentProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +975,7 @@
 		};
 		5E9ADC2226A030A50080D0B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 381D50C0DA8A090DC81DB640 /* Pods-AppointmentProject-AppointmentProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +996,7 @@
 		};
 		5E9ADC2326A030A50080D0B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA39A7F2082906CDD7EBC8C /* Pods-AppointmentProject-AppointmentProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -597,6 +1055,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E9A951E26A226E70032D3A6 /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MaxDesiatov/XMLCoder.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E9A951F26A226E70032D3A6 /* XMLCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E9A951E26A226E70032D3A6 /* XCRemoteSwiftPackageReference "XMLCoder" */;
+			productName = XMLCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5E9ADBFA26A030A30080D0B8 /* AppointmentProject.xcdatamodeld */ = {
