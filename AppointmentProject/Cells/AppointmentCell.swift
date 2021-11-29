@@ -8,59 +8,89 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SnapKit
 
 class AppointmentCell: UITableViewCell {
     private let disposeBag =  DisposeBag()
-
-    var data:ModelCell? {
+    var data:ModelAppointmentCell? {
         didSet {
-        guard let data = data as? ModelAppointmentCell else {
-            return
-        }
-            professionsLabel.text = data.doctorProfession
-            doctorNameLabel.text = data.doctorName
+            guard let data = data else {
+                return
+            }
             subdivisionLabel.text = data.subdivision
+            doctorNameLabel.text = data.doctorName
+            professionsLabel.text = data.doctorProfession
             createLabelsLayout()
+            createIsActiveImage(isActive: data.isActive)
 
         }
     }
-    
     private var professionsLabel = UILabel()
     private var doctorNameLabel = UILabel()
     private var subdivisionLabel = UILabel()
-    
+    private var isActiveImage = UIImageView()
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
     }
-    func createLabelsLayout() {
-        staticLabelCharacteristics(label: &subdivisionLabel, font: 18, textColor: #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1))
-        staticLabelCharacteristics(label: &doctorNameLabel, font: 20, textColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
-
-        staticLabelCharacteristics(label: &professionsLabel, font: 16, textColor: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+    private func createIsActiveImage(isActive:Bool) {
         
+        let image =  isActive ?  UIImage(systemName: "timer") :   UIImage(systemName: "checkmark.circle.fill")
 
-        subdivisionLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15).isActive = true
+        isActiveImage.image = image
+        
+        isActiveImage.translatesAutoresizingMaskIntoConstraints = false
+        isActiveImage.tintColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
+        
+        contentView.addSubview(isActiveImage)
+        isActiveImage.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().inset(10)
+            make.centerY.equalToSuperview()
+            make.height.equalTo(20)
+            make.width.equalTo(20)
+        }
+        
        
-        doctorNameLabel.topAnchor.constraint(equalTo: subdivisionLabel.bottomAnchor).isActive = true
-        professionsLabel.topAnchor.constraint(equalTo: doctorNameLabel.bottomAnchor).isActive = true
-        professionsLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15).isActive = true
+
+    }
+    private func createLabelsLayout() {
+        
+        staticLabelCharacteristics(label: &subdivisionLabel, font: 16, textColor: #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1))
+        staticLabelCharacteristics(label: &doctorNameLabel, font: 16, textColor: .black)
+
+        staticLabelCharacteristics(label: &professionsLabel, font: 16, textColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
+        
+        doctorNameLabel.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(15)
+        }
+        subdivisionLabel.snp.makeConstraints { make in
+            make.top.equalTo(doctorNameLabel.snp.bottom)
+        }
+        professionsLabel.snp.makeConstraints { make in
+            make.top.equalTo(subdivisionLabel.snp.bottom)
+            make.bottom.equalToSuperview().inset(15)
+
+        }
+     
     }
     
-    func staticLabelCharacteristics(label: inout UILabel,font:CGFloat,textColor:UIColor) {
+   private func staticLabelCharacteristics(label: inout UILabel,font:CGFloat,textColor:UIColor) {
         label.numberOfLines = 0
-        
-        label.font = UIFont.systemFont(ofSize: font, weight: .medium)
+       label.font =  UIFont.monospacedDigitSystemFont(ofSize: font, weight: .medium)
         label.textColor = textColor
         label.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(label)
-        label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
-        label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20).isActive = true
+       
+       label.snp.makeConstraints { make in
+           make.leading.equalToSuperview().inset(20)
+           make.trailing.equalToSuperview().inset(35)
+
+       }
+
     }
     
 

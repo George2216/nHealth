@@ -1,0 +1,72 @@
+/* 
+  Localizable.strings
+  AppointmentProject
+
+  Created by George on 31.07.2021.
+  
+*/
+"discount" = "Знижки";
+
+"youCanceledOurAppointmentFor" = "Ви відмінили запис до:";
+
+"youSignedUpFor" = "Ви записалися до";
+
+"receiveNotificationHeader" = "Отримувати повідомлення для:";
+
+"soudsSettingsHeader" = "Налаштування звуку";
+
+"notificationSoundFooter" = "Також опції звуку є у основних налаштуваннях девайсу";
+
+"allNotificationFooter" = "Ви можете вимкнути сповіщення для деяких подій";
+
+"goToSettingFooter" = "Пуш повідомлення можливо увімкнути і вимкнути лише у налаштуваннях телефону. Якщо повідомлення не працюють натисніть 'Перейти до налаштувань' › 'Повідомлення' та оберіть 'Допуск повідомлень'. Також перевірте опції нижче.";
+
+"goToSettings" = "Перейти до налаштувань";
+
+"cancellationAppNf" = "Видалення запису";
+"appointmentNf" = "Запис";
+"soundNf" = "Звук";
+"pushNotifications" = "Пуш повідомлення";
+
+"cityHeader" = "Оберіть місто в якому знаходиться ваша клініка";
+"clinicHeader" = "Оберіть клініку в щоб далі було можливо записатися";
+"clinicFooter" = "Можливо обрати лише одну клініку , як і місто (змінити вибір можливо в налаштуваннях)";
+
+"clinic" = "Лікарня";
+"selectYourCity" = "Знайти свое місто";
+"selectYourClinic" = "Знайти свою клініку";
+"selectCity" = "Обрати місто";
+"selectClinic" = "Обрати лікарню";
+
+"kyiv" = "Київ";
+"poltava" = "Полтава";
+"kharkiv" = "Харків";
+"odessa" = "Одеса";
+
+"doctorName" = "Ім'я лікаря";
+"filters" = "Фільтри";
+"clear" = "Очистити";
+"language" = "Мова";
+"appointments" = "Записи";
+"doctors" = "Лікарі";
+"doctor" = "Лікар";
+"close" = "Закрити";
+"subdivision" = "Підрозділи";
+"professions" = "Профілі";
+"signUp" = "Записатися";
+"fullName" = "ПІБ";
+"save" = "Зберегти";
+"invalidNamePhone" = "Некоректні ПІБ / номер телефона";
+"map" = "Мапа";
+"history" = "Історія";
+"delete" = "Видалити";
+"goToDoctor" = "Перейти до лікаря";
+"settings" = "Налаштування";
+"server" = "Сервер";
+"aboutUs" = "Про нас";
+"addServer" = "Додати сервер";
+"urlSelected" = "URL - обраний!!! Будь-ласка виберіть інший";
+"urlRequired" = "URL - обов'язковий!!!";
+"deleteUrlQu" = "Видалити URL?";
+"locale" = "Локація:";
+"of" = "з";

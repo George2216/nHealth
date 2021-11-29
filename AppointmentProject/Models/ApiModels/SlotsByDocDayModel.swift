@@ -15,7 +15,7 @@ struct SlotsByDocDayModel: Codable {
 struct WindowsModel: Codable {
     let name:String
     let DoctorName:String
-    let DoctorId:String
+    var DoctorId:String
     let Date:String
     let Window:[WindowModel]
 }

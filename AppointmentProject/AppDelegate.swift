@@ -7,19 +7,84 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FirebaseMessaging
+
+
+extension AppDelegate : MessagingDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                 willPresent notification: UNNotification,
+                                 withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        completionHandler([.sound,.banner,.badge])
+     }
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        // refresh token
+        UserDefaults.standard.setValue(fcmToken ?? "" , forKey: UDKeys.pushNotificationToken.rawValue)
+    }
+    
+    private func configureFirebase(for application:UIApplication) {
+        
+        FirebaseApp.configure()
+        UNUserNotificationCenter.current().delegate = self
+        Messaging.messaging().delegate = self
+        let authOptions: UNAuthorizationOptions = [.alert, .badge , .sound]
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: authOptions) {
+            [weak self] (granted, error) in
+            
+            guard let self = self else { return }
+            
+            if NotificationSettingsModel.getData(for: .notificationSettings) == nil {
+                let notificationSettings = NotificationSettingsModel(sound: true, completion: true, cancellation: true)
+                notificationSettings.saveSelfData(for: .notificationSettings)
+            }
+            
+            guard granted else {
+                return
+            }
+            
+            self.getNotificationSettings()
+        }
+    }
+    
+    
+    func getNotificationSettings() {
+        UNUserNotificationCenter.current().getNotificationSettings { (settings) in            
+            guard settings.authorizationStatus == .authorized else {
+                return
+            }
+            DispatchQueue.main.async {
+                UIApplication.shared.registerForRemoteNotifications()
+            }
+        }
+    }
+    
+    static func gotoAppSettings() {
+        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+        DispatchQueue.main.async {
+        if UIApplication.shared.canOpenURL(settingsUrl) {
+            UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
+            }
+        }
+    }
+}
+
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate  {
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        configureFirebase(for: application)
         return true
     }
 
     // MARK: UISceneSession Lifecycle
-
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.

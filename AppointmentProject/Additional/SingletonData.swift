@@ -9,13 +9,26 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class SingletonData {
-    
+final class SingletonData {
     private let disposeBag = DisposeBag()
-    static let shared = SingletonData()
+    static  let shared = SingletonData()
     let arrayLanguage = ["Українська","English","Русский"]
     let systemArrayLanguage = ["uk","en","ru"]
+    var token:String {
+        if let token = UserDefaults.standard.value(forKey: UDKeys.requestToken.rawValue) as? String {
+        return token
+    }
+    return ""
+    }
     
+    var defaultUrlPath:String {
+        if let defaultUrlPath = UserDefaults.standard.value(forKey: UDKeys.urlPath.rawValue) as? String {
+        return defaultUrlPath
+    }
+    return ""
+    }
+    
+    let webViewPath = "http://vikisoft.kiev.ua/nhealth/"
     private static var defaultLanguage:Int {
         if  let indexLanguage = UserDefaults.standard.value(forKey: UDKeys.languageIndex.rawValue) as? Int {
             return indexLanguage
@@ -25,18 +38,15 @@ class SingletonData {
     var languageIndex = BehaviorRelay<Int>(value: defaultLanguage)
     
     func getCentersListData() -> CentersListModel? {
-        if let subdivisionsData = UserDefaults().data(forKey: UDKeys.Subdivisions.rawValue) {
-            guard let subdivision:CentersListModel = getPacketFromData(data: subdivisionsData) else {
-                return nil
-            }
-            return subdivision
-    }
-        return nil
+         CentersListModel.getData(for: .Subdivisions)
 }
     
     
 private init() {
-    languageIndex.subscribe(onNext: { index in        UserDefaults.standard.set(index, forKey: UDKeys.languageIndex.rawValue)
+    languageIndex.subscribe(onNext: { index in
+        UserDefaults.standard.set(index, forKey: UDKeys.languageIndex.rawValue)
         }).disposed(by: disposeBag)
-    }
+}
+   
+   
 }

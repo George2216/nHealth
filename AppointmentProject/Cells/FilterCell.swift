@@ -8,7 +8,7 @@
 import UIKit
 
 class FilterCell: UICollectionViewCell {
-    var data:ModelFilterCell? {
+    internal var data:ModelFilterCell? {
         didSet {
             labelAction.text =  data?.text
             imageAction.image = UIImage(systemName: data?.systemImageName ?? "")
@@ -18,8 +18,8 @@ class FilterCell: UICollectionViewCell {
     @IBOutlet weak var labelAction: UILabel!
     @IBOutlet weak var imageAction: UIImageView!
     
-    func uiAdditional(){
-        contentView.backgroundColor = #colorLiteral(red: 0.9610242248, green: 0.9553111196, blue: 0.9654156566, alpha: 1)
+    private func uiAdditional(){
+        contentView.backgroundColor = #colorLiteral(red: 0.9334705472, green: 0.9279213548, blue: 0.9377360344, alpha: 1)
         contentView.layer.cornerRadius = 15
         contentView.clipsToBounds = true
         contentView.layer.borderWidth = 1.0

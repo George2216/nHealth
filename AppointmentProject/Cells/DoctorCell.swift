@@ -10,60 +10,57 @@ import RxSwift
 import RxCocoa
 
 class DoctorCell: UITableViewCell {
-    let disposeBag = DisposeBag()
+    private var disposeBag = DisposeBag()
+    internal var externalDisposeBag = DisposeBag()
+    private let collectionSlotIdentfier = "DoctorTimeCell"
+    
     var data:DoctorModelCell? {
-        
         didSet {
             collectionData.onNext(data?.arrayCollection ?? [])
             name.text = data?.name
-            subdivision.text = data?.subdivision
             profession.text = data?.profession
-            
             myCollcetionViewSlots.layoutSubviews()
+            doctorImage?.image = UIImage(named: "doctor")
             self.layoutSubviews()
-            index = 0
         }
     }
     
-    var index = 0
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var doctorImage: UIImageView!
     @IBOutlet weak var profession: UILabel!
-    @IBOutlet weak var subdivision: UILabel!
+    
     @IBOutlet weak var myCollcetionViewSlots: DynamicHeightCollectionView!
-    let collectionData = PublishSubject<[String]>()
-    var delegateSelect:SelectTimeSlotProtocol?
+    private let collectionData = PublishSubject<[TimeSlotModel]>()
+    internal lazy var selectSlot:Observable<Int> = {
+        
+        myCollcetionViewSlots.rx.itemSelected.map{$0.row}
+    }()
     override func awakeFromNib() {
         super.awakeFromNib()
         createCollection()
 
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+    override func prepareForReuse() {
+                super.prepareForReuse()
+        externalDisposeBag = DisposeBag()
     }
-
+    
     func createCollection() {
         let layout = CollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 90, height: 50)
-      
         myCollcetionViewSlots.setCollectionViewLayout(layout, animated: true)
-        
-        collectionData.bind(to:myCollcetionViewSlots.rx.items(cellIdentifier: "DoctorTimeCell", cellType: DoctorTimeCell.self)) { [self] row , titleLabel , cell in
-           
-            cell.textLabel.text = titleLabel
-            let isSelected = index == row
-            cell.textLabel.backgroundColor = isSelected ? .systemBlue : #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 0.1698313328)
-            cell.textLabel.textColor = isSelected ? .white : .systemBlue
-            
+       
+        collectionData.bind(to:myCollcetionViewSlots.rx.items(cellIdentifier: collectionSlotIdentfier, cellType: DoctorTimeCell.self)) { row , slotData , cell in
+            cell.textLabel.text = slotData.time
+            cell.textLabel.backgroundColor =   #colorLiteral(red: 0.9335836768, green: 0.9536595941, blue: 0.9832097888, alpha: 1)
+            cell.textLabel.textColor =  #colorLiteral(red: 0.182285279, green: 0.4131350517, blue: 0.7902112007, alpha: 1)
+
+
         }.disposed(by: disposeBag)
         
         
-        myCollcetionViewSlots.rx.itemSelected.subscribe(onNext: {[self] indexPath in
-            index = indexPath.row
-            delegateSelect?.selectSlot(docId: data?.docId ?? "" , rowSlot: indexPath.row)
-            myCollcetionViewSlots.reloadData()
-        }).disposed(by: disposeBag)
+        
     }
     
     

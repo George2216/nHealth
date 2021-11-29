@@ -11,13 +11,17 @@ import RxCocoa
 import RxDataSources
 import UIKit
 
+
+protocol ModelCell { }
+
 struct TableViewSection {
-    let items: [ModelCell]
-    let header: String
-    
-    init(items: [ModelCell], header: String) {
+    var items: [ModelCell]
+    let header: String?
+    let footer: String?
+    init(items: [ModelCell], header: String?, footer:String?) {
         self.items = items
         self.header = header
+        self.footer = footer
     }
 }
 
@@ -29,26 +33,26 @@ extension TableViewSection: SectionModelType {
     }
 }
 
-struct IntermediateDataSource  {
+struct GeneralDataSource  {
     
     typealias DataSource = RxTableViewSectionedReloadDataSource
-    static func dataSource() -> DataSource<TableViewSection> {
+    static func dataSource<T:CustomTVCell>(type:T) -> DataSource<TableViewSection> {
+        
         return .init(configureCell: { dataSource, tableView, indexPath, item -> UITableViewCell in
-            let cell = AppointmentCell()
+            let cell = T()
             cell.data = item
-            cell.selectionStyle = .none
-            
-            
             return cell
         }, titleForHeaderInSection: { dataSource, index in
-            
             return dataSource.sectionModels[index].header
+        }, titleForFooterInSection: { dataSource, index in
+            return dataSource.sectionModels[index].footer
         })
     }
 }
-
-
-// required type cell model
-protocol ModelCell {
-
+protocol TableCellProtocol {
+    var data: ModelCell? { get set }
 }
+class CustomTVCell: UITableViewCell, TableCellProtocol  {
+    var data: ModelCell?
+}
+

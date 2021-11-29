@@ -8,8 +8,8 @@
 import UIKit
 
 class SubdivisionCell: UITableViewCell {
-    var delegate:MapDelegate?
-    var model:CenterListModel? {
+    internal var delegate:MapDelegate?
+    internal var model:CenterListModel? {
         didSet {
             if let model = model {
             profession.text = model.name
@@ -32,7 +32,7 @@ class SubdivisionCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     @IBAction func mapAction(_ sender: Any) {
-        delegate?.showMap(longitude: model?.longitude ?? "", latitude: model?.latitude ?? "" , title: model?.name ?? "" , subtitle: model?.address ?? "" )
+        delegate?.showMap(content: CoordinateModel(latitude: model?.longitude ?? "", longitude: model?.latitude ?? "", title: model?.name ?? "" , subtitle: model?.address ?? ""))
 
 //      
     }

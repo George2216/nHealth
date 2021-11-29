@@ -1,0 +1,72 @@
+/* 
+  Localizable.strings
+  AppointmentProject
+
+  Created by George on 31.07.2021.
+  
+*/
+"discount" = "Скидки";
+
+"youCanceledOurAppointmentFor" = "Вы отменили запись к:";
+
+"youSignedUpFor" = "Вы записальсь к:";
+
+"receiveNotificationHeader" = "Получать уведомления для:";
+
+"soudsSettingsHeader" = "Настройки звука";
+
+"notificationSoundFooter" = "Так же опции звука есть в основных настройках устройства";
+"allNotificationFooter" = "Вы можете отключить уведомления для определенных событий";
+
+"goToSettingFooter" = "Пуш уведомнения возможно включить и выключить только в настройках телефона. Если уведомления не работают нажмите 'Перейти в настройки' › 'Уведомления' и выберите 'Допуск уведомлений'. Так же пороверьте опции ниже.";
+
+"goToSettings" = "Перейти в настройки";
+
+"cancellationAppNf" = "Удаление записи";
+"appointmentNf" = "Запись";
+"soundNf" = "Звук";
+
+"pushNotifications" = "Пуш уведомления";
+
+"cityHeader" = "Выберите город в котором находится ваша клиника";
+"clinicHeader" = "Выберите клинику чтобы можно было записаться";
+"clinicFooter" = "Возможно выбрать лишь одну клинику , как и город (изменить выбор возможно в настройках)";
+
+"clinic" = "Клиника";
+"selectYourCity" = "Найти свой город";
+"selectYourClinic" = "Найти свою клинику";
+"selectCity" = "Выбрать город";
+"selectClinic" = "Выбрать клинику";
+
+"kyiv" = "Киев";
+"poltava" = "Полтава";
+"kharkiv" = "Харьков";
+"odessa" = "Одесса";
+
+"doctorName" = "Имя доктора";
+"filters" = "Фильтры";
+"clear" = "Очистить";
+"language" = "Язык";
+"appointments" = "Записи";
+"doctors" = "Доктора";
+"doctor" = "Доктор";
+"close" = "Закрыть";
+"subdivision" = "Подразделения";
+"professions" = "Профили";
+"signUp" = "Записаться";
+"fullName" = "ФИО";
+"save" = "Сохранить";
+"invalidNamePhone" = "Некоректные ФИО / номер телефона";
+"map" = "Карта";
+"history" = "История";
+"delete" = "Удалить";
+"goToDoctor" = "Перейти к доктору";
+"settings" = "Настройки";
+"server" = "Сервер";
+"aboutUs" = "Про нас";
+"addServer" = "Добавить сервер";
+"urlSelected" = "URL - выбран!!! Пожалуйста выберите другой";
+"urlRequired" = "URL - обязателен!!!";
+"deleteUrlQu" = "Удалить URL?";
+"locale" = "Локация:";
+"of" = "из";

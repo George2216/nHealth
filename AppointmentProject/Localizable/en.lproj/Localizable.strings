@@ -1,0 +1,69 @@
+/* 
+  Localizable.strings
+  AppointmentProject
+
+  Created by George on 31.07.2021.
+  
+*/
+
+"discount" = "Discount";
+"youCanceledOurAppointmentFor" = "You canceled our appointment for:";
+
+"youSignedUpFor" = "You signed up for";
+"receiveNotificationHeader" = "Receive notifications for:";
+
+"soudsSettingsHeader" = "Sounds settings";
+
+"allNotificationFooter" = "You can turn off notifications for certain events";
+
+"notificationSoundFooter" = "Sounds settings are also available in the main settings of your device.";
+
+"goToSettingFooter" = "Push notifications can be turned on and off in your device's settings only. In case you're not receiving notifications, press 'Go to settings' › 'Notifications' and select 'Allow notifications'. You can also check additional options down below.";
+
+"goToSettings" = "Go to  settings";
+"cancellationAppNf" = "Appointment cancellation";
+"appointmentNf" = "Appoincment completion";
+"soundNf" = "Sound";
+"pushNotifications" = "Push notifications";
+
+"cityHeader" = "Choose the city your clinic is located in";
+"clinicHeader" = "Choose the clinic to get an appointment ";
+"clinicFooter" = "You can only choose one clinic and one city (in case you would like to change the city or the clinic you can do so in the settings)";
+"clinic" = "Clinic";
+"selectYourCity" = "Select your city";
+"selectYourClinic" = "Select your clinic";
+"selectCity" = "Select city";
+"selectClinic" = "Select clinic";
+
+"kyiv" = "Kyiv";
+"poltava" = "Poltava";
+"kharkiv" = "Kharkiv";
+"odessa" = "Odessa";
+"doctorName" = "Doctor name";
+"filters" = "Filters";
+"clear" = "Clear";
+"language" = "Language";
+"appointments" = "Appointments";
+"doctors" = "Doctors";
+"doctor" = "Doctor";
+
+"close" = "Close";
+"subdivision" = "Subdivision";
+"professions" = "Professions";
+"signUp" = "Sign up";
+"fullName" = "Full name";
+"save" = "Save";
+"invalidNamePhone" = "Invalid full name / phone number";
+"map" = "Map";
+"history" = "History";
+"delete" = "Delete";
+"goToDoctor" = "Go to doctor";
+"settings" = "Settings";
+"server" = "Server";
+"aboutUs" = "About us";
+"addServer" = "Add server";
+"urlSelected" = "URL - selected!!! Please select another";
+"urlRequired" = "URL - required!!!";
+"deleteUrlQu" = "Delete URL?";
+"locale" = "Locale:";
+"of" = "of";
