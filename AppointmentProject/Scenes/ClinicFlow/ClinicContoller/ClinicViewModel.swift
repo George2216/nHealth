@@ -8,6 +8,7 @@
 import RxSwift
 import RxCocoa
 import Foundation
+import CoreData
 extension ClinicViewModel {
     private var tableItems:Driver<[TableViewSection]> {
         items.asDriverOnErrorJustComplete()
@@ -27,6 +28,9 @@ extension ClinicViewModel {
     private var hideActivityIndicatiorDriver:Driver<Void> {
         hideActivityIndicatior.asDriverOnErrorJustComplete()
     }
+    private var connectionErrorDriver:Driver<String> {
+        connectionError.asDriverOnErrorJustComplete()
+    }
 }
 
 final class ClinicViewModel: ViewModelProtocol {
@@ -36,11 +40,12 @@ final class ClinicViewModel: ViewModelProtocol {
     private let goToMainFlow = PublishSubject<Void>()
     private let showActivityIndicatior = PublishSubject<Void>()
     private let hideActivityIndicatior = PublishSubject<Void>()
-    
+    private let connectionError = PublishSubject<String>()
+    private let connectionErrorMessage = Localizable.localize(.connectionError)
     func transform(_ input: Input) -> Output {
         subscribeOnCityIndex(input)
         subscribeOnSelectClinc(input)
-        return Output(items: tableItems,title:title, searchControllerTitle: searchControllerTitle, goToMainFlow: goToMainFlowDriver, showActivityIndicatior: showActivityIndicatiorDriver, hideActivityIndicatior: hideActivityIndicatiorDriver)
+        return Output(items: tableItems,title:title, searchControllerTitle: searchControllerTitle, goToMainFlow: goToMainFlowDriver, showActivityIndicatior: showActivityIndicatiorDriver, hideActivityIndicatior: hideActivityIndicatiorDriver, connectionError: connectionErrorDriver)
     }
  
     private func subscribeOnCityIndex(_ input: Input) {
@@ -65,24 +70,37 @@ final class ClinicViewModel: ViewModelProtocol {
             UserDefaults.standard.setValue(clinic.urlString, forKey: UDKeys.urlPath.rawValue)
             
             self.showActivityIndicatior.onNext(())
-            self.getCenterList(token: clinic.token)
+            self.getCenterList(token: clinic.token, clinic:clinic)
             
         }).disposed(by: disposeBag)
        
     }
-    private func getCenterList(token:String) {
+    private func getCenterList(token:String,clinic:ClinicProtocol) {
         let apiManager = XMLMultiCoder<CentersListModel>()
         let inputData = InputModelCentersList(Token:token)
         
-        apiManager.parsData(input: inputData, metod: .POST, phpFunc: .CenterList, ecodeParam: EncodeParam(withRootKey: "Root", rootAttributes: nil, header: nil)).asObservable().subscribe(onNext: { [weak self] centerList , _ in
-            // save on data format
+        
+        Observable.zip(apiManager.parsData(input: inputData, metod: .POST, phpFunc: .CenterList, ecodeParam: EncodeParam(withRootKey: "Root", rootAttributes: nil, header: nil)).asObservable(), connectionErrorMessage)
+            .subscribe(onNext: { [weak self] centerList , errorText in
+            // save on data forma
             guard let self = self else { return }
-            guard  let centerList = centerList else { return }
-            centerList.saveSelfData(for: .Subdivisions)
+                
+           
+                
             self.hideActivityIndicatior.onNext(())
+
+            if  let centerList = centerList.0 {
+                
+            centerList.saveSelfData(for: .Subdivisions)
             
             DispatchQueue.global().asyncAfter(deadline: .now() + .milliseconds(500)) {
                 self.goToMainFlow.onNext(())
+            }
+                
+            } else {
+                DispatchQueue.global().asyncAfter(deadline: .now() + .milliseconds(500)) {
+                self.connectionError.onNext(errorText)
+                }
             }
             
         }).disposed(by: disposeBag)
@@ -99,6 +117,7 @@ final class ClinicViewModel: ViewModelProtocol {
         let goToMainFlow:Driver<Void>
         let showActivityIndicatior:Driver<Void>
         let hideActivityIndicatior:Driver<Void>
+        let connectionError:Driver<String>
     }
     
 }

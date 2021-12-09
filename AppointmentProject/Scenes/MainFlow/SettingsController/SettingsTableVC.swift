@@ -9,6 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxRelay
+
 final class SettingsTableVC: UITableViewController , Storyboarded {
     internal var nvContent = PublishSubject<Event>()
     

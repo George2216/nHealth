@@ -30,6 +30,7 @@ enum LocalizeString: String , Codable {
     case poltava
     case kharkiv
     case odessa
+    case zaporizhzhia
     
     case doctorName
     case doctors
@@ -84,5 +85,6 @@ enum LocalizeString: String , Codable {
     case youSignedUpFor
     case youCanceledOurAppointmentFor
     case discount
+    case connectionError
 }
 

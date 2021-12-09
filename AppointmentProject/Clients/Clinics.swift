@@ -51,3 +51,8 @@ struct DentalCenter:ClinicProtocol {
 
 
 
+struct ZSMU:ClinicProtocol {
+    var name: String = "Університетська клініка ЗДМУ"
+    var urlString: String = "server2.vikisoft.com.ua:9008/client/ZDMU"
+    var token: String = "DFA4F99C-C864"
+}

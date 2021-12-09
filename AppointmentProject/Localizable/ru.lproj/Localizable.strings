@@ -5,6 +5,10 @@
   Created by George on 31.07.2021.
   
 */
+"connectionError" = "Ошибка подключения!!!";
+
+"zaporizhzhia" = "Запорожье";
+
 "discount" = "Скидки";
 
 "youCanceledOurAppointmentFor" = "Вы отменили запись к:";

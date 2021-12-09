@@ -26,11 +26,11 @@ final class PushNotificationTVC: UITableViewController {
     private lazy var dataSourse: RxTableViewSectionedReloadDataSource<NotificationSection> = .init(configureCell: { [unowned self] (dataSource, tableView, indexPath, item) in
         switch item {
         case .switchModelData(info: let info):
-        let cell = configureNotificationCell(indexPath: indexPath, content: info)
-        return cell
+            let cell = configureNotificationCell(indexPath: indexPath, content: info)
+            return cell
         case .goToSettingsModel(title: let titleText, imageName: let imageName):
-        let settingsCell = SettingsCell()
-        let cell = creteSettingsCell(indexPath: indexPath, titleText: titleText, imageName: imageName)
+            let settingsCell = SettingsCell()
+            let cell = creteSettingsCell(indexPath: indexPath, titleText: titleText, imageName: imageName)
             return cell
         }
         } , titleForHeaderInSection: { dataSource, sectionIndex in
@@ -89,7 +89,7 @@ final class PushNotificationTVC: UITableViewController {
         let imageColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         cell.data = TVCellImageModel(imageName: imageName, imageColor: imageColor, titleText: titleText, textSize: .big)
         cell.accessoryType = .disclosureIndicator
-        return cell
+            return cell
         
     }
     enum Event {

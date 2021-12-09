@@ -34,6 +34,8 @@ struct Cities {
             return Kharkiv()
         case .Odessa:
             return Odessa()
+        case .Zaporizhzhia:
+            return Zaporizhzhia()
         }
     }
     init() {
@@ -41,6 +43,7 @@ struct Cities {
         cities.append(createCity(.Kyiv))
         cities.append(createCity(.Kharkiv))
         cities.append(createCity(.Odessa))
+        cities.append(createCity(.Zaporizhzhia))
     }
     
     private enum City {
@@ -48,5 +51,6 @@ struct Cities {
     case Kyiv
     case Kharkiv
     case Odessa
+    case Zaporizhzhia
     }
 }

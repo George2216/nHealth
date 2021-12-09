@@ -25,6 +25,7 @@ final class ClinicTVC: UITableViewController , Storyboarded {
         
         showActivityIndicatior(output)
         hideActivityIndicatior(output)
+        connectionError(output)
         }
    
    
@@ -68,7 +69,12 @@ final class ClinicTVC: UITableViewController , Storyboarded {
             guard let self = self else { return }
             self.nvEvents.onNext(.hideActivityIndicatior)
         }).disposed(by: disposeBag)
-        
+    }
+    private func connectionError(_ output:ClinicViewModel.Output) {
+        output.connectionError.drive(onNext: {[weak self] message in
+            guard let self = self else { return }
+            self.nvEvents.onNext(.connectionError(message))
+        }).disposed(by: disposeBag)
     }
 }
 
@@ -89,6 +95,7 @@ extension ClinicTVC {
     case goToMainFlow
     case showActivityIndicatior
     case hideActivityIndicatior
+    case connectionError(_ message:String)
     }
 }
 

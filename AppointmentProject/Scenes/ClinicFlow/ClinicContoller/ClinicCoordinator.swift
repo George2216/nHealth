@@ -47,8 +47,9 @@ final class ClinicCoordinator : NSObject , Coordinator , CoordinatorFinishDelega
             case .goToMainFlow:
             NotificationCenter.default.post(name: .goToFlow(flow: .mainFlow), object: nil)
                 
-           
-           
+            case .connectionError(let message):
+                controller.presentAlertWithTitle(title: message, message: "", options: "×", style: .destructive) { action in }
+
             }
         }).disposed(by: disposeBag)
     }

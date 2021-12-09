@@ -99,3 +99,24 @@ struct Odessa:CityProtocol {
         case dentalCenter
     }
 }
+
+struct Zaporizhzhia:CityProtocol {
+    var nameKey: LocalizeString = .zaporizhzhia
+    var clinics: [ClinicProtocol] = []
+    
+    init() {
+        clinics.append(addClinic(.ZSMU))
+    }
+    
+    private func addClinic(_ clinic: ZaporizhzhiaClinics) -> ClinicProtocol {
+        switch clinic {
+        case .ZSMU:
+            return ZSMU()
+       
+        }
+    }
+    private enum ZaporizhzhiaClinics {
+        case ZSMU
+    }
+    
+}

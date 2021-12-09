@@ -5,6 +5,8 @@
   Created by George on 31.07.2021.
   
 */
+"connectionError" = "Connection error!!!";
+"zaporizhzhia" = "Zaporizhzhia";
 
 "discount" = "Discount";
 "youCanceledOurAppointmentFor" = "You canceled our appointment for:";
